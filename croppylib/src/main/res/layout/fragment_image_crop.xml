@@ -47,40 +47,14 @@
                             app:srcCompat="@drawable/ic_cancel"
                             app:tint="@color/white" />
 
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:orientation="horizontal">
-
-                            <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/buttonSizeWidth"
-                                android:layout_width="@dimen/width_button_bitmap_dimension"
-                                android:layout_height="@dimen/height_button_bitmap_dimension"
-                                android:layout_marginRight="@dimen/margin_4dp"
-                                android:background="@drawable/background_rounded_text"
-                                android:gravity="center"
-                                android:maxLength="6"
-                                android:text="@{viewState.getWidthButtonText(context)}"
-                                android:textColor="@color/white"
-                                android:textStyle="bold" />
-
-
-                            <androidx.appcompat.widget.AppCompatTextView
-                                android:id="@+id/buttonSizeHeight"
-                                android:layout_width="@dimen/width_button_bitmap_dimension"
-                                android:layout_height="@dimen/height_button_bitmap_dimension"
-                                android:layout_marginLeft="@dimen/margin_4dp"
-                                android:background="@drawable/background_rounded_text"
-                                android:gravity="center"
-                                android:maxLength="6"
-                                android:text="@{viewState.getHeightButtonText(context)}"
-                                android:textColor="@color/white"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
+                            android:fontFamily="@font/pop_med"
+                            android:text="Crop Image"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/imageViewApply"

@@ -188,7 +188,7 @@ class CropView @JvmOverloads constructor(
      * Corner toggle paint
      */
     private val cornerTogglePaint = Paint().apply {
-        color = ContextCompat.getColor(context, R.color.blue)
+        color = ContextCompat.getColor(context, R.color.red_crop)
         strokeWidth = cornerToggleWidthInPixel
         style = Paint.Style.STROKE
     }
