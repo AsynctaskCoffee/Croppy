@@ -339,6 +339,7 @@ class CropView @JvmOverloads constructor(
                         updateExceedMinBorders()
                         notifyCropRectChanged()
                     }
+                    else -> {}
                 }
             }
             ACTION_UP -> {
@@ -350,6 +351,7 @@ class CropView @JvmOverloads constructor(
                         animateBitmapToCenterTarget()
                         animateCropRectToCenterTarget()
                     }
+                    else -> {}
                 }
             }
         }
@@ -946,6 +948,7 @@ class CropView @JvmOverloads constructor(
                                 cropRect.right,
                                 cropRect.top + minSize
                             )
+                            else -> {}
                         }
                     }
                     is DraggingCorner -> {
@@ -974,8 +977,10 @@ class CropView @JvmOverloads constructor(
                                 cropRect.right,
                                 cropRect.top + minSize
                             )
+                            else -> {}
                         }
                     }
+                    else -> {}
                 }
             }
             ASPECT -> {
@@ -1011,6 +1016,7 @@ class CropView @JvmOverloads constructor(
                                 cropRect.centerX(),
                                 cropRect.top
                             )
+                            else -> {}
                         }
                         matrix.mapRect(minRect, cropRect)
                     }
@@ -1041,9 +1047,11 @@ class CropView @JvmOverloads constructor(
                                 cropRect.right,
                                 cropRect.top
                             )
+                            else -> {}
                         }
                         matrix.mapRect(minRect, cropRect)
                     }
+                    else -> {}
                 }
             }
         }
@@ -1092,6 +1100,7 @@ class CropView @JvmOverloads constructor(
                                 cropRect.right,
                                 borderRect.bottom
                             )
+                            else -> {}
                         }
                     }
                     is DraggingCorner -> {
@@ -1120,8 +1129,10 @@ class CropView @JvmOverloads constructor(
                                 cropRect.right,
                                 borderRect.bottom
                             )
+                            else -> {}
                         }
                     }
+                    else -> {}
                 }
 
             }
@@ -1196,6 +1207,7 @@ class CropView @JvmOverloads constructor(
                                 )
                                 matrix.mapRect(maxRect, cropRect)
                             }
+                            else -> {}
                         }
                     }
                     is DraggingCorner -> {
@@ -1228,8 +1240,10 @@ class CropView @JvmOverloads constructor(
                                 matrix.setScale(minScale, minScale, cropRect.right, cropRect.top)
                                 matrix.mapRect(maxRect, cropRect)
                             }
+                            else -> {}
                         }
                     }
+                    else -> {}
                 }
             }
         }

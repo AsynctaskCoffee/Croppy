@@ -2,7 +2,9 @@
     package="com.lyrebirdstudio.croppylib">
 
     <application>
-        <activity android:name=".main.CroppyActivity" />
+        <activity
+            android:name=".main.CroppyActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
